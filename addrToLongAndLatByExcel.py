@@ -7,7 +7,8 @@ import pprint
 
 # 获得根据地址返回的json字符串
 def get_mapLngLat(addr):
-    url = 'http://api.map.baidu.com/geocoder/v2/?address={}&output=json&ak=T9wg1BibN8VMVEDudgyh6RkqwEvcGQjF'.format(
+	# 百度API地址，注意 AK 是自己的。（去百度地图API申请）
+    url = 'http://api.map.baidu.com/geocoder/v2/?address={}&output=json&ak***********************='.format(
         addr)
     res = requests.get(url)
     # 转换为json串
